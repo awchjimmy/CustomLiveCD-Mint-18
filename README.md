@@ -7,3 +7,4 @@
 * openssh-server
 * git
 * vlc
+* apache2
