@@ -101,7 +101,7 @@ $ sudo umount edit/dev
 ### Assembling the file system
 Regenerate manifest
 ```
-$ chmod +w extract-cd/casper/filesystem.manifest
+$ sudo chmod +w extract-cd/casper/filesystem.manifest
 $ sudo su
 $ chroot edit dpkg-query -W --showformat='${Package} ${Version}\n' > extract-cd/casper/filesystem.manifest
 $ exit
@@ -111,7 +111,6 @@ $ sudo sed -i '/casper/d' extract-cd/casper/filesystem.manifest-desktop
 ```
 Compress filesystem
 ```
-$ sudo rm extract-cd/casper/filesystem.squashfs
 $ sudo mksquashfs edit extract-cd/casper/filesystem.squashfs
 ```
 Update the filesystem.size file, which is needed by the installer:
