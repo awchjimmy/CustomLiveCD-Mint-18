@@ -8,3 +8,4 @@
 * git
 * vlc
 * apache2
+* python3-venv
